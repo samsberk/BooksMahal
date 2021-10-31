@@ -1,0 +1,306 @@
+﻿*{
+	margin:0;
+	padding:0;
+}
+/*------------------------------------------------- Default ------------------------------------------------*/
+body {
+	font-family: quicksand;
+	color: dimgray;
+	user-select: none;
+}
+
+hr {
+	height: 2px;
+	background: lightgray;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	font-family: quicksand;
+	color: dimgray;
+	user-select: none;
+}
+
+label, p {
+	font-family: quicksand;
+	color: dimgray;
+	user-select: none;
+}
+
+.link {
+	text-decoration: none;
+	font-family: quicksand;
+	user-select: none;
+	color: blueviolet;
+}
+
+	.link:hover {
+		text-decoration: none;
+		font-family: quicksand;
+		color: blue;
+	}
+
+	.link:focus {
+		text-decoration: none;
+		font-family: quicksand;
+		color: blueviolet;
+	}
+
+.link-footer {
+	text-decoration: none;
+	font-family: quicksand;
+	user-select: none;
+	color: antiquewhite;
+}
+
+	.link-footer:hover {
+		text-decoration: none;
+		font-family: quicksand;
+		color: aqua;
+	}
+
+	.link-footer:focus {
+		text-decoration: none;
+		font-family: quicksand;
+		color: antiquewhite;
+	}
+
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	min-height: 50px;
+	width: 100%;
+	background: dimgray;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px 0px;
+	font-family: muli;
+	user-select: none;
+	z-index: 99;
+}
+
+.mypills li a {
+	color: dimgray;
+	font-family: quicksand;
+	padding: 7px !important;
+	transition: all 1s;
+}
+
+.mypills li.active a {
+	background: dimgray;
+	color: antiquewhite;
+}
+
+	.mypills li a:hover, .mypills li.active a:hover, .mypills li.active a:focus {
+		background: gray;
+		color: white;
+	}
+
+#informer, #showstate, #show, #otherlbl {
+	display: none;
+}
+.alert-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	display: none;
+	z-index: 9999;
+}
+
+	.alert-box .alert-dialog {
+		position: relative;
+		top: 50vh;
+		left: 50%;
+		min-height: 200px;
+		width: 500px;
+		padding: 15px;
+		background: ghostwhite;
+		box-shadow: 1px 1px 25px black;
+		transform: translate(-50%,-50%);
+	}
+
+@media(max-width:768px) {
+	.alert-box .alert-dialog {
+		width: 90%;
+	}
+}
+/*------------------------------------------------- Loader ------------------------------------------------*/
+#loader {
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	z-index: 99999;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	background: url(../Images/loader2.gif) center no-repeat #ffffff;
+}
+
+.after-click {
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	background: url(../Images/loader2.gif) center no-repeat #ffffff;
+	display: none;
+}
+.loader-footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	font-size: 12px;
+}
+/*------------------------------------------------- Menu ------------------------------------------------*/
+.mymnav {
+	background: #ffffff;
+	user-select: none;
+	box-shadow: 1px 1px 25px gray;
+	z-index:9998;
+}
+
+.mybrand {
+	font-family: Poppins;
+	color: dimgray;
+	font-size: 20px;
+	letter-spacing:2px;
+	transition: all 0.5s;
+}
+
+	.mybrand:hover {
+		color: orangered;
+	}
+
+.mynavmenu li a {
+	color: dimgray;
+	font-size: 14px;
+	letter-spacing: 2px;
+	margin-left: 2px;
+	font-family: Quicksand;
+	transition: all 1s;
+}
+
+.mynavmenu li.active a {
+	color: orangered;
+	background: lightgray;
+}
+
+.mynavmenu li a:hover {
+	color: orangered;
+}
+
+.navbar-toggle {
+	border: none;
+	color: orangered;
+}
+
+/*------------------------------------------------- Side Menu ------------------------------------------------*/
+.side-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 100%;
+	box-shadow:1px 1px 25px dimgray;
+	padding-top: 60px;
+	z-index: 9;
+}
+
+	.side-menu span {
+		color: dimgray;
+		font-size: 30px;
+		width: 100%;
+		height: 50px;
+		padding-left: 18%;
+		padding-top: 9px;
+		cursor: pointer;
+		border-bottom: 0.5px solid dimgray;
+		transition: all 1s;
+	}
+		.side-menu span.now-open {
+			color: orangered;
+			background:lightgray;
+			font-size: 30px;
+			width: 100%;
+			height: 50px;
+			padding-left: 18%;
+			padding-top: 9px;
+			cursor: pointer;
+			border-bottom: 1px solid dimgray;
+			transition: all 1s;
+		}
+
+		.side-menu span:hover{
+			color: orangered;
+		}
+
+
+.side-menu-box {
+	min-height: 100%;
+	width: 100%;
+	padding-left: 50px;
+}
+
+	.side-menu-box .panel-body {
+		min-height: 100vh;
+		padding-top: 50px;
+	}
+
+.tooltip-inner {
+	background: #1b1b1b;
+	font-family: muli;
+	padding: 10px;
+	font-size: 15px;
+	opacity: 1;
+	border: none;
+}
+
+
+/*------------------------------------------------- Menu ------------------------------------------------*/
+/*------------------------------------------------- Admin Home  ------------------------------------------------*/
+.link{
+	text-decoration:none;
+	color:dimgray;
+}
+.link:hover{
+	text-decoration:none;
+	color:orangered;
+}
+	.link:focus {
+		text-decoration: none;
+		color: orangered;
+	}
+	.link div {
+		width: 100%;
+		border: 0.5px solid lightgray;
+		text-align: center;
+		font-size: 12px;
+		padding: 10px;
+		padding-top:14px;
+		font-family:quicksand;
+		font-weight:bold;
+		letter-spacing:1px;
+		border-radius: 5%;
+		user-select: none;
+		transition: all 0.5s;
+	}
+.link .dash-div:hover{
+	box-shadow:1px 1px 25px dimgray;
+	cursor:pointer;
+	color:orangered;
+	text-decoration:none;
+	transition:all 0.5s;
+}
+.link .dash-div i{
+	font-size:10vw;
+}
+
